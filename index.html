@@ -15,27 +15,30 @@
         <nav class="index-nav">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#div3-main">About</a></li>
+                <li><a href="#div4-main">Services</a></li>
+                <li><a href="#footer-info">Contact</a></li>
             </ul>
         </nav>
     </header>
+
+    <dialog id="myDialog">
+        <h2>Bekreftelse</h2>
+        <p>Er du sikkert at du vil gjør dette?</p>
+        <div class="dialog-buttons">
+            <button class="btn-cancel" onclick="closeDialog()">X</button>
+        </div>
+    </dialog>
+
     <main class="index-main">
-        <div class="div1-main">
+        <div class="div1-main" id="div1-main">
             <div>
                 <h2>Hvordan nye teknologi påvirker <br> demokrati og medborgerskap</h2>
                 <p>Muligheter og utfordringer i digital tid</p>
-                <button class="detaljer">Detaljer</button>
+                <button class="detaljer" id="detaljer_home">Detaljer</button>
             </div>
         </div>
-        <!-- <div class="div2-main">
-            <section class="index-section">
-                <h2>Section Title</h2>
-                <p>This is a section within the main content area. It can be used to group related content together.</p>
-            </section>
-        </div> -->
-        <div class="div3-main">
+        <div class="div3-main" id="div3-main">
             <article class="index-article">
                 <div class="h2-index-article">
                     <h2>Digital Deltakelse</h2>
@@ -46,7 +49,7 @@
                         gang – men også åpner døren for manipulasjon og skjult påvirkning.</p>
                 </div>
                 <div class="button-index-article">
-                    <button class="detaljer">Detaljer</button>
+                    <button class="detaljer" id="detaljer_digital">Detaljer</button>
                 </div>
             </article>
             <article class="index-article">
@@ -59,7 +62,7 @@
                         vårt uten at vi merker det.</p>
                 </div>
                 <div class="button-index-article">
-                    <button class="detaljer">Detaljer</button>
+                    <button class="detaljer" id="detaljer_fake_news">Detaljer</button>
                 </div>
             </article>
             <article class="index-article">
@@ -72,18 +75,89 @@
                         hvorfor det kan være mer enn du tror.</p>
                 </div>
                 <div class="button-index-article">
-                    <button class="detaljer">Detaljer</button>
+                    <button class="detaljer" id="detaljer_folk">Detaljer</button>
                 </div>
             </article>
-            <!-- <aside class="index-aside">
-                <h2>Aside Title</h2>
-                <p>This is an aside section. It can be used to display additional information or related content that is not part of the main flow.</p>
-            </aside> -->
+        </div>
+        <div class="div4-main" id="div4-main">
+            <article class="index-article">
+                <p>
+                    Om podkasten: Teknologi & Demokrati <br>
+                    I denne episoden dykker vi ned i det komplekse forholdet mellom
+                    den digitale revolusjonen og vårt demokratiske samfunn. Hvordan påvirker algoritmene valgene våre,
+                    og er sosiale medier en trussel eller en berikelse for den offentlige samtalen? Vi diskuterer blant
+                    annet: Algoritmenes makt: Hvordan personlig tilpasset innhold skaper ekkokamre. Digitale
+                    skillelinjer: Hvem faller utenfor når samfunnet digitaliseres? Fremtidens løsninger: Hvordan kan vi
+                    regulere teknologi uten å kvele ytringsfriheten? Bli med på en utforskende samtale om hvordan vi kan
+                    navigere i et digitalt landskap der teknologien setter premissene for politikken.
+                </p>
+            </article>
+            <audio class="audio" src="democracy.mp3" controls></audio>
         </div>
     </main>
+
     <footer class="index-footer">
-        <p>&copy; 2026 DEMOKRATIPORTALEN. All rights reserved.</p>
+        <div class="footer_blok" style="text-align: center;">
+            <div class="footer-right">
+                <h2>Kilder</h2>
+                <p>MDN Web Docs. (2025). <em>&lt;audio&gt; - Element for å legge til lyd på en side</em>. Mozilla.
+                    Hentet fra <a
+                        href="https://developer.mozilla.org/ru/docs/Web/HTML/Reference/Elements/audio">https://developer.mozilla.org/ru/docs/Web/HTML/Reference/Elements/audio</a>
+                </p>
+                <p>LabEx. (2025). <em>Opprett modale vinduer med HTML-&lt;dialog&gt;-taggen</em>. Hentet fra <a
+                        href="https://labex.io/ru/tutorials/html-html-dialog-box-window-70742">https://labex.io/ru/tutorials/html-html-dialog-box-window-70742</a>
+                </p>
+                <p>Grigorenko, A. (2025). <em>Hvordan bruke HTML-elementet &lt;dialog&gt;?</em> Habr. Hentet fra <a
+                        href="https://habr.com/ru/articles/778542/">https://habr.com/ru/articles/778542/</a></p>
+                <p>Stack Overflow. (2010). <em>Hvordan style HTML5-lydelementet?</em> Hentet fra <a
+                        href="https://stackoverflow.com/questions/4126708/how-to-style-html5-audio-tag">https://stackoverflow.com/questions/4126708/how-to-style-html5-audio-tag</a>
+                </p>
+                <p>MDN Web Docs. (2025). <em>scroll-behavior</em>. Mozilla. Hentet fra <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-behavior">https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-behavior</a>
+                </p>
+                <p>CodeConvey. (u.å.). <em>Customize HTML5 Audio Player with CSS</em>. Hentet fra <a
+                        href="https://codeconvey.com/customize-html5-audio-player-css/">https://codeconvey.com/customize-html5-audio-player-css/</a>
+                </p>
+                <p>Mukhamedzjanov, H. (2024). <em>Slette stiler – Reset.css</em>. WebStep.kz. Hentet fra <a
+                        href="https://webstep.kz/blog/sbros-stilej-reset-css/">https://webstep.kz/blog/sbros-stilej-reset-css/</a>
+                </p>
+                <p>Microsoft. (2026). <em>Visual Studio Code for the Web – dokumentasjon</em>. Hentet fra <a
+                        href="https://vscode.dev">https://vscode.dev</a></p>
+                <p>Chromium Blink. (2019). <em>mediaControls.css – Standardstiler for mediekontroller i Chromium</em>.
+                    Google Source. Hentet fra <a
+                        href="https://chromium.googlesource.com/chromium/blink/+/72fef91ac1ef679207f51def8133b336a6f6588f/Source/core/css/mediaControls.css?autodive=0%2F%2F%2F">https://chromium.googlesource.com/chromium/blink/+/72fef91ac1ef679207f51def8133b336a6f6588f/Source/core/css/mediaControls.css</a>
+                </p>
+                <p>WHATWG. (2026). <em>HTML Standard</em>. GitHub. Hentet fra <a
+                        href="https://github.com/whatwg/html">https://github.com/whatwg/html</a></p>
+            </div>
+        </div>
     </footer>
+
+    <footer class="footer-info" id="footer-info">
+        <div class="footer_blok">
+            <div class="footer_left">
+                <h1>Teknologi & Demokrati</h1>
+                <p style="opacity: 0.8">Dagens demokrati står overfor en fundamental endring drevet av den teknologiske
+                    utviklingen. Dette prosjektet utforsker det komplekse samspillet mellom teknologi, medier og
+                    digitale plattformer, og hvordan disse kreftene påvirker det politiske landskapet. Vi ser nærmere på
+                    både de positive mulighetene for økt folkelig deltakelse og de kritiske utfordringene som
+                    desinformasjon, algoritmebasert polarisering og overvåking utgjør for våre demokratiske
+                    institusjoner i det 21. århundre.</p>
+            </div>
+            <div class="footer-right">
+                <h1>Kreditt</h1>
+                <p style="opacity: 0.8">Nettsiden laget av [Vsevolod- E-mail: <a
+                        href="mailto:vsevolodboss@gmail.com">vsevolodboss@gmail.com</a> Tlf:56783557]</p> <br>
+                <p style="opacity: 0.8">Podcast redigert av [Danylo- E-mail: <a
+                        href="mailto:danilkolbasenko@gmail.com">danilkolbasenko@gmail.com</a> Tlf:99876803]</p> <br>
+                <p style="opacity: 0.8">Server laget av [Illia- E-mail: <a
+                        href="mailto:illiatishchenko@gmail.com">illiatishchenko@gmail.com</a> Tlf:93947008]</p> <br>
+            </div>
+        </div> <br>
+        <p style="text-align: center;">&copy; 2026 DEMOKRATIPORTALEN.</p>
+    </footer>
+
+    <script src="source/js/main.js"></script>
 </body>
 
 </html>
